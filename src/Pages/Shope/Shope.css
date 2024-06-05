@@ -1,0 +1,24 @@
+.shop-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    justify-content: space-evenly;
+}
+
+.shop-container .featuredbook-box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+@media (max-width:562px){
+
+    .shop-container .featuredbook-box{
+        width: 100%;
+    }
+}

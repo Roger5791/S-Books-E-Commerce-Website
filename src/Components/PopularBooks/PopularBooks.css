@@ -1,0 +1,115 @@
+.gallery{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+  column-gap: 15px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 18px;
+    animation: galleryAni forwards 400ms ease;
+    
+}
+
+
+@keyframes galleryAni {
+    from {
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+
+.popular-container{
+    border-bottom: 1px solid var(--color-dark-ex);
+    padding-bottom: 56px;
+}
+
+.filter-buttons{
+    margin-top: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.filter-buttons button{
+    font-size: 17px;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    transition: var(--transition);
+    padding-bottom: 6px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover{
+    color: var(--color-primary);
+}
+
+.filter-buttons .active{
+    border-bottom: 3px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.popular-image{
+    background: var(--color-light);
+    width: 250px;
+    height: 250px;
+}
+
+.popular-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.popular-info>div{
+    margin-top: 8px;
+  
+}
+
+@media(max-width:1024px){
+
+    .popular-container .gallery{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .popular-container .gallery{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .popular-container .popular-info>div{
+        margin-bottom: 14px;
+    }
+
+    .featuredbook-box{
+        gap: 12px;
+    }
+
+    .gallery-item{
+        gap: 12px;
+    }
+
+  
+
+}

@@ -1,0 +1,28 @@
+
+.search-container form{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.search-container input{
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid var(--color-dark-ex);
+    outline: 0;
+    padding: 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: var(--color-bg-1);
+}
+
+.search-container .search-remove{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+    transform: translate(50%, -10%);
+    cursor: pointer;
+}

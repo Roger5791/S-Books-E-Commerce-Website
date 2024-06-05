@@ -1,0 +1,59 @@
+.featured-book-container{
+    position: relative;
+}
+
+.featuredbook-box{
+    margin-top: 56px;
+    display: flex;
+   flex-direction: column; 
+   gap: 18px;
+   align-items: center;
+   text-align: center;
+
+}
+
+.featurebook{
+    background: var(--color-light);
+    width: 250px;
+    height: 250px;
+
+}
+
+.featurebook img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.featuredbook-info>div{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.featured-book-container .swiper-pagination{
+    margin: auto;
+    margin-top: 60px !important;
+}
+
+.feature-border{
+    height: 1px;
+    background:  var(--color-dark-ex);
+    margin-top: 56px;
+}
+
+.feature-btn{
+    margin: auto;
+    margin-right: 0;
+    margin-top: -40px;
+}
+
+
+@media (max-width:1024px){
+
+    .feature-btn{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
